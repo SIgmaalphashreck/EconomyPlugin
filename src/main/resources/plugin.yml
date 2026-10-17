@@ -1,0 +1,54 @@
+name: EconomyPlugin
+version: 1.0.0
+main: de.shrekma.economy.EconomyPlugin
+api-version: '1.20'
+description: Economy, bounties, vanish, invsee/ecsee
+
+commands:
+  money:
+    description: Show or manage money
+    usage: /money [Player] | /money <add|set> <Player> <Number>
+  pay:
+    description: Pay another player
+    usage: /pay <Player> <Number>
+  bal:
+    description: Show a balance
+    aliases: [balance]
+    usage: /bal [Player]
+  baltop:
+    description: Money leaderboard
+    usage: /baltop
+  bounty:
+    description: Place or manage bounties
+    usage: /bounty add <Player> <Number>
+  bounties:
+    description: List all bounties
+    usage: /bounties
+  vanish:
+    description: Become invisible to other players
+    aliases: [v]
+    permission: economy.vanish
+    usage: /vanish
+  invsee:
+    description: Open a player's inventory
+    permission: economy.admin
+    usage: /invsee <Player>
+  ecsee:
+    description: Open a player's ender chest
+    permission: economy.admin
+    usage: /ecsee <Player>
+  tp:
+    description: Teleport to a player
+    permission: economy.admin
+    usage: /tp <Player>
+
+permissions:
+  economy.admin:
+    description: Operator commands (money add/set, bounty set/add, invsee, ecsee, tp)
+    default: op
+  economy.vanish:
+    description: Use /vanish
+    default: op
+  economy.vanish.see:
+    description: See vanished players
+    default: false

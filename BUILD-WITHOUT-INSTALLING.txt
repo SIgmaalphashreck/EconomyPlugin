@@ -1,0 +1,6 @@
+1. Create a free GitHub account and a new empty repository.
+2. Click "uploading an existing file" and drag in EVERYTHING from this folder
+   (including the hidden .github folder), then commit.
+3. Open the "Actions" tab, wait ~1 minute for "Build plugin" to turn green.
+4. Open that run, download the "EconomyPlugin" artifact (zip), unzip it -> EconomyPlugin.jar
+5. Upload the jar in your FalixNodes plugin page and restart the server.
